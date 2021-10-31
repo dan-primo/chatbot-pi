@@ -17,144 +17,23 @@ html {
   padding: 0;
   box-sizing: inherit;
 }
+
 body {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  background-image: url('../../templates/images/bg05.jpg');
+  align-items: center;
+  height: 100vh;
+  background-image: var(--body-bg);
   font-family: Helvetica, sans-serif;
 }
 
- /*  Menu  */
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  background-color: rgb(76, 129, 85);
-  width: 100%;
- }
-img {
-  width: 100px;
-}
-.menu li {
-  display: inline-block;
-  margin: auto 20px;
-  padding: 5px;
-  list-style-type: none;
-}
-.menu a {
-  font-size: 20px;
-  font-weight: bold;
-  color: antiquewhite;
-  text-decoration: none;
-  padding: 10px;
-}
-.menu a:hover {
-  text-decoration: underline;
-  background-color: rgba(250, 241, 226, 0.1);
-  box-shadow: 0 15px 15px -10px rgba(0, 0, 0, 0.4);
-  border-radius: 10%;
-  transition: background-color .8s;
-  transition: box-shadow .2s;
-}
-
- /*  Bloco inicial  */
-.inicio {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  max-width: 75%;
-  border-radius: 5px;
-  margin: 100px auto;
-  margin-top: 200px;
-  background-color: rgba(76, 129, 85, 1);
-}
-.bemv {
-  display: block;
-  border: solid 2px antiquewhite;
-  max-height: 100%;
-  max-width: 100%;
-  margin: 10px;
-  padding: 50px;
-  font-size: 20px;
-  text-align: center;
-  color: antiquewhite;
-}
-.album {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 10px;
-}
-.album > li {
-  list-style: none;
-  width: 20%;
-  height: 300px;
-  border: 2px solid antiquewhite;
-  box-shadow: 0px 0px 5px white;
-  text-align: center;
-  transition: all 0.4s ease-in;
-}
-.album li:hover{
-	transform: scale(1.5, 1.06);
-}
-.album li#foto01 {
-	background: url('../../templates/images/bettlerlife.jpg') no-repeat;
-	background-position: 50%;
-	background-size: 400px 400px;
-}
-.album li#foto01:hover {
-	background-position: 100%;
-	background-size: 101% 101%;
-}
-.album li#foto02 {
-	background: url('../../templates/images/novembro.jpg') no-repeat;
-	background-position: 50%;
-	background-size: 400px 400px;
-}
-.album li#foto02:hover {
-	background-position: 100%;
-	background-size: 101% 101%;
-}
-.album li#foto03 {
-	background: url('../../templates/images/easydiet.jpg') no-repeat;
-	background-position: 50%;
-	background-size: 400px 400px;
-}
-.album li#foto03:hover {
-	background-position: 100%;
-	background-size: 101% 101%;
-}
-
- /*  Rodape  */
-footer {
-  display: block;
-  width: 100%;
-  background-color: rgb(76, 129, 85);
-  color: antiquewhite;
-  margin-top: 50px;
-  align-items: center;
-  text-align: center;
-  font-family: cursive;
-}
-.frase {
-  margin: 15px;
-  font-size: 25px;
-  font-family: Brush Script MT, Brush Script Std, cursive;
-}
-
- /*  Chat  */
 .msger {
-  
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
-  position: relative;
-  width: 50%;
-  max-width: 800px;
-  margin: auto;
+  width: 100%;
+  max-width: 867px;
+  margin: 25px 10px;
   height: calc(100% - 50px);
   border: var(--border);
   border-radius: 5px;
