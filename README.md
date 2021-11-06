@@ -1,18 +1,24 @@
 
 # Solução de Chatbot para Projeto Integrador Univesp
 
+### Pré-requisitos para rodar o projeto localmente:
+1. Python versão 3.7.8 (Outras versões que não sejam essa podem ter o comportamento inesperado)
+2. Preferencialmente Pycharm, mas pode ser usado também o VSCode com extensão de Python desde que seja configurada adequadamente a virtualenv do projeto.
+
 ### Intruções para rodar o projeto localmente:
 
-1. Tenha um editor de código, preferencialmente por ser um projeto em Python, recomendo PyCharm ou VSCode;
-
-2. Tenha instalado a versão 3.7 do python, você pode acessar diretamente no site oficial da linguagem [Python.org](https://www.python.org/downloads/) 
-
-3. Clone o repositorio em sua máquina, por exemplo utilizando a url HTTPS:
+1. Clone o repositorio em sua máquina, por exemplo utilizando a url HTTPS:
 
 ``
 git clone https://github.com/dan-primo/chatbot-pi.git
 ``
 
-4. Execute o arquivo app.py
+2. Execute o arquivo app.py
+3. Caso tenha problemas em rodar o arquivo verifique se configurou adequadamente o interpretador do Python para a versão 3.7.8
+
+### Frameworks e libs:
+- Flask
+- Chatterbot
+- chatterbot-corpus
 
 * Obs.: README em contrução
