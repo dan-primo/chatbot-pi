@@ -7,20 +7,20 @@ chatbot = ChatBot('ChatBot-PI')
 
 # Training with Personal Ques & Ans
 conversation = [
-    "Hello",
-    "Hi there!",
-    "How are you doing?",
-    "I'm doing great.",
-    "That is good to hear",
-    "Thank you.",
-    "You're welcome."
+    "Oi",
+    "Olá!",
+    "Como vai?",
+    "Estou bem.",
+    "Que bom!",
+    "Obrigada.",
+    "De nada!"
 ]
 
 trainer = ListTrainer(chatbot)
 trainer.train(conversation)
 
-# Training with English Corpus Data
+# Training with Portuguese Corpus Data
 trainer_corpus = ChatterBotCorpusTrainer(chatbot)
 trainer_corpus.train(
-    'chatterbot.corpus.english'
+    'chatterbot.corpus.portuguese'
 )
