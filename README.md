@@ -24,5 +24,3 @@ git clone https://github.com/dan-primo/chatbot-pi.git
 ### Tecnologias utilizadas:
 - Python 3.7.8
 - SQLite3
-
-* Obs.: README em contrução
