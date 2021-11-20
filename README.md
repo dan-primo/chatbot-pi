@@ -21,4 +21,8 @@ git clone https://github.com/dan-primo/chatbot-pi.git
 - Chatterbot
 - chatterbot-corpus
 
+### Tecnologias utilizadas:
+- Python 3.7.8
+- SQLite3
+
 * Obs.: README em contrução
