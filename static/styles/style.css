@@ -28,7 +28,7 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
-/* menu */
+/* menu
 .menu {
   display: flex;
   justify-content: space-between;
@@ -60,7 +60,7 @@ img {
   border-radius: 10%;
   transition: background-color .8s;
   transition: box-shadow .2s;
-}
+}*/
 /*  Rodape  */
 footer {
   display: block;
@@ -99,8 +99,7 @@ footer {
   justify-content: space-between;
   width: 100%;
   max-width: 867px;
-  margin: auto;
-  margin-top: 100px;
+  margin: 25px 10px;
   height: calc(100% - 50px);
   border: var(--border);
   border-radius: 5px;
