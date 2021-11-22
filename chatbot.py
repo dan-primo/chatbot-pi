@@ -3,31 +3,21 @@ from chatterbot.trainers import ListTrainer
 from chatterbot.trainers import ChatterBotCorpusTrainer
 
 # Creating ChatBot Instance
-#chatbot = ChatBot('ChatBot-PI')
-chatbot = ChatBot(
-    'ChatBot-PI',
-    storage_adapter='chatterbot.storage.SQLStorageAdapter',
-    logic_adapters=[
-        'chatterbot.logic.MathematicalEvaluation',
-        'chatterbot.logic.TimeLogicAdapter',
-        'chatterbot.logic.BestMatch',
-        {
-            'import_path': 'chatterbot.logic.BestMatch',
-            'default_response': 'Sinto muito, mas eu não consegui compreender. Eu ainda estou aprendendo.',
-            'maximum_similarity_threshold': 0.90
-        }
-    ],
-    database_uri='sqlite:///database.sqlite3'
-)
+chatbot = ChatBot('ChatBot-PI')
 
 # Training with Personal Ques & Ans
-training_data_quesans = open('training_data/ques_ans.txt').read().splitlines()
-training_data_personal = open('training_data/personal_ques.txt').read().splitlines()
-
-training_data = training_data_quesans + training_data_personal
+conversation = [
+    "Oi",
+    "Olá!",
+    "Como vai?",
+    "Estou bem.",
+    "Que bom!",
+    "Obrigado.",
+    "De nada!"
+]
 
 trainer = ListTrainer(chatbot)
-trainer.train(training_data)  
+trainer.train(conversation)
 
 # Training with Portuguese Corpus Data
 trainer_corpus = ChatterBotCorpusTrainer(chatbot)
