@@ -12,14 +12,15 @@
 ``
 git clone https://github.com/dan-primo/chatbot-pi.git
 ``
-
-2. Execute o arquivo app.py
-3. Caso tenha problemas em rodar o arquivo verifique se configurou adequadamente o interpretador do Python para a versão 3.7.8
+2. Instale as bibliotecas citadas nas tecnologias utilizadas e caso encontre algum erro, acesse: https://stackoverflow.com/questions/66087475/chatterbot-error-oserror-e941-cant-find-model-en
+3. Execute o arquivo app.py
+4. Caso tenha problemas em rodar o arquivo verifique se configurou adequadamente o interpretador do Python para a versão 3.7.8
 
 ### Frameworks e libs:
 - Flask
 - Chatterbot
 - chatterbot-corpus
+- Spacy
 
 ### Tecnologias utilizadas:
 - Python 3.7.8
