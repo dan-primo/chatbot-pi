@@ -20,10 +20,11 @@ html {
 
 body {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: var(--body-bg);
+  background-image: url(https://media.istockphoto.com/vectors/food-background-vegetables-seamless-pattern-healthy-eating-tomato-vector-id1198380802);
   font-family: Helvetica, sans-serif;
 }
 
@@ -148,5 +149,5 @@ body {
 
 .msger-chat {
   background-color: #fcfcfe;
-  background-image: url(https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX7238450.jpg)
+  background-image: url(https://www.gomacro.com/prodgomacro/media/supportmedia/2021/02/02/gluten-free-food-r2.jpg)
 }
